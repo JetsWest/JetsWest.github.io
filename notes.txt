@@ -1,0 +1,27 @@
+Skills
+Project Experience
+Work Experience
+About Me
+
+Top Left: About me -> Quick summary + education
+Top Right: Project Experience ->
+    What the fuck do i put here bro
+Bottom left: Skills 
+    Need to make it look nicer somehow
+Bottom right: work experience (i think put tbd there for now?)
+
+
+Expert: Java, SQL, Python
+
+Proficient: JavaScript, C, Linux Systems
+
+Intermediate: HTML, CSS, React
+
+
+TODO:
+* Update my resume with mom
+* Make the Skills section look nicer
+* Complete the About me, Project Experience, and Work Experience Sections
+* Actually host the website somewhere   
+
+
