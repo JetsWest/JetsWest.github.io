@@ -3,8 +3,9 @@
 
 <head>
     <link href='https://fonts.googleapis.com/css?family=Archivo Black' rel='stylesheet'>
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.cdnfonts.com/css/bebas-neue" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,46 +13,28 @@
 </head>
 
 <body>
-    <div class="split left">
-        <img src="images/jackson.png" alt="Jackson"/>
-        <h2><span>Jackson Atkins</span></h2>
-        <a href="https://www.linkedin.com/in/jackson-atkins-9b46801b9/" class="fa fa-linkedin"></a>
-        <a href="https://github.com/jetswest" class="fa fa-github"></a>
-        <a href="mailto: jraatkins@gmail.com" class="fa fa-google"></a>
+    <div id="parent" class="toolbar">
+        <a class="btn active" href="#homepage">Home</a>
+        <a class="btn" href="#about">About Me</a>
+        <a class="btn" href="#project">Projects</a>
+        <a class="btn" href="#work">Work Experience</a>
     </div>
-
-    <div class="split right">
-        <ul class="gallery">
-            <li>
-                <a href="about.html">
-                    <img src="images/aboutme.png">
-                    <div class="overlay"></div>
-                </a>
-            
-            </li>
-            <li>
-                <a href="projects.html">
-                    <img src="images/projects.png" />
-                    <div class="overlay"></div>
-                </a>
-            </li>
-            <li>
-                <a href="skills.html">
-                    <img src="images/skills.png" />
-                    <div class="overlay"></div>
-                </a>
-            </li>
-            <li>
-                <a href="work.html">
-                    <img src="images/work.png" />
-                    <div class="overlay"></div>
-                </a>
-            </li>
-        </ul>
-        <a href="jackson_resume.pdf" download>
-            <button class="btn"><i class="fa fa-download"></i>Download Resume</button>
-        </a>
+    <div class="container">
+        <section id="homepage" class="homepage">
+            <h2><span>Jackson Atkins</span></h2>
+            <h3><span>Data Scientist | Software Engineer</span></h3>
+            <a href="https://www.linkedin.com/in/jackson-atkins-9b46801b9/" class="fa fa-linkedin"></a>
+            <a href="https://github.com/jetswest" class="fa fa-github"></a>
+            <a href="mailto: jraatkins@gmail.com" class="fa fa-google"></a>
+            <a href="#" class="fa fa-download"></a>
+        </section>
+        <section id="about" class="about">
+        </section>
+        <section id="project" class="project">
+        </section>
+        <section id="work" class="work">
+        </section>
     </div>
+    <script src="main.js"></script>
 </body>
-
 </html>
