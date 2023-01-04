@@ -49,7 +49,7 @@ body {
 }
 
 .project {
-    background-color: #ddd;
+    background-color: white;
 }
 
 .work {
@@ -63,6 +63,7 @@ body {
 }
 
 .container section {
+    max-width: 100%;
     height: 100vh;
     scroll-snap-align: start;
 }
@@ -97,6 +98,70 @@ body {
     padding: 10px;
 }
 
+.about h3 {
+    position: relative;
+    top: 120px;
+    width: 100%;
+    text-align: center;  
+}
+
+.about h3 span {
+    color: white;
+    font: bold 35px/normal "opensans-bold", sans-serif;
+    text-shadow: rgba(126, 75, 101, 0.9) 0px 0px 22px;
+    letter-spacing: -1px;
+    padding: 10px;
+}
+
+.about h4 {
+    position: relative;
+    top: 100px;
+    width: 100%;
+    text-align: center;  
+}
+
+.about h4 span {
+    color: white;
+    font: bold 35px/normal "opensans-bold", sans-serif;
+    text-shadow: rgba(126, 75, 101, 0.9) 0px 0px 22px;
+    letter-spacing: -1px;
+    padding: 10px;
+}
+
+.info {
+    color: orange;
+    position: relative;
+    margin-left: 25%;
+    margin-right: 25%;
+    top: 100px;
+    display: inline-block;
+    font: bold 24px/normal "opensans", sans-serif;
+    text-align: center;
+}
+
+.edu1 {
+    color: orange;
+    position: relative;
+    margin-left: 25%;
+    margin-right: 25%;
+    top: 100px;
+    display: inline-block;
+    font: bold 24px/normal "opensans", sans-serif;
+    text-align: left;
+}
+
+.edu2 {
+    color: orange;
+    position: relative;
+    margin-left: 25%;
+    margin-right: 25%;
+    top: 100px;
+    display: inline-block;
+    font: bold 24px/normal "opensans-bold", sans-serif;
+    text-align: left;
+}
+
+
 .fa {
     padding: 20px;
     font-size: 50px;
@@ -113,26 +178,175 @@ body {
     color: white;
     position: relative;
     top: 120px;
-    left: 500px;
+    /*left: 700px;*/
+    left: 40vw;
 }
 
 .fa-github {
     color: white;
     position: relative;
     top: 120px;
-    left: 550px;
+    /*left: 750px;*/
+    left: 40vw;
 }
 
 .fa-google {
     color: white;
     position: relative;
     top: 120px;
-    left: 600px;
+    /*left: 800px;*/
+    left: 40vw;
 }
 
 .fa-download {
     color: white;
     position: relative;
     top: 120px;
-    left: 650px;
+    /*left: 850px;*/
+    left: 40vw;
+}
+
+.timeline {
+    border-left: 4px solid orange;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;    
+    color: rgba(82, 82, 82, 0.8);
+    font-family: 'Chivo', sans-serif;  
+    margin: 50px auto;  
+    letter-spacing: 0.5px;   
+    position: relative;
+    line-height: 1.88em;
+    font-size: 1.03em;   
+    padding: 50px;   
+    list-style: none;
+    text-align: left;  
+    font-weight: 100;
+    max-width: 30%; 
+}
+
+.timeline a {
+    color: rgba(0, 0, 0, 0.4);
+    text-decoration: none;
+}
+
+.timeline h5 {
+    font-family: 'Saira', sans-serif;
+    letter-spacing: 1.5px;
+    font-weight: 400;
+    font-size: 1.4em;
+}
+
+.event {
+    border-bottom: 1px dashed black;
+    padding-bottom: 25px;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.timeline .event:last-of-type {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border: none;
+}
+
+.timeline .event:before, .timeline .event:after {
+    position: absolute;
+    display: block;
+    top: 0;
+}
+
+.timeline .event:before {
+    left: -217.5px;
+    color: rgba(0, 0, 0, 0.4);
+    content: attr(data-date);
+    text-align: right;
+    font-weight: 100;
+    font-size: 0.9em;
+    min-width: 120px;
+    font-family: 'Saira', sans-serif;
+}
+
+.timeline .event p {
+    font-family: 'Chivo', sans-serif;
+}
+
+.timeline .event:after {
+    left: -69px;
+    background: orange;
+    border: 2px solid black;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    content: "";
+    top: 5px;
+}
+
+.timeline2 {
+    border-left: 4px solid orange;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;    
+    color: rgba(199, 199, 199, 0.8);
+    font-family: 'Chivo', sans-serif;  
+    margin: 50px auto;  
+    letter-spacing: 0.5px;   
+    position: relative;
+    line-height: 1.88em;
+    font-size: 1.03em;   
+    padding: 50px;   
+    list-style: none;
+    text-align: left;  
+    font-weight: 100;
+    max-width: 30%; 
+}
+
+.timeline2 h5 {
+    font-family: 'Saira', sans-serif;
+    letter-spacing: 1.5px;
+    font-weight: 400;
+    font-size: 1.4em;
+}
+
+.event2 {
+    border-bottom: 1px dashed white;
+    padding-bottom: 25px;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.timeline2 .event2:last-of-type {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border: none;
+}
+
+.timeline2 .event2:before, .timeline2 .event2:after {
+    position: absolute;
+    display: block;
+    top: 0;
+}
+
+.timeline2 .event2:before {
+    left: -217.5px;
+    color: rgba(255, 255, 255, 0.4);
+    content: attr(data-date);
+    text-align: right;
+    font-weight: 100;
+    font-size: 0.9em;
+    min-width: 120px;
+    font-family: 'Saira', sans-serif;
+}
+
+.timeline2 .event2 p {
+    font-family: 'Chivo', sans-serif;
+}
+
+.timeline2 .event2:after {
+    left: -69px;
+    background: orange;
+    border: 2px solid white;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    content: "";
+    top: 5px;
 }
